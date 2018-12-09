@@ -1,6 +1,9 @@
-﻿using System;
+﻿using EEGame.ViewModels;
+using FreshMvvm;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EEGame.Pages;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace EEGame
@@ -11,7 +14,7 @@ namespace EEGame
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new FreshNavigationContainer(FreshPageModelResolver.ResolvePageModel<MainViewModel>());
         }
 
         protected override void OnStart()
