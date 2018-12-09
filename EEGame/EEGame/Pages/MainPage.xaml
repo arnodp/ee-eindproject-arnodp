@@ -10,9 +10,9 @@
                    AbsoluteLayout.LayoutBounds="0,0,1,1"
                    AbsoluteLayout.LayoutFlags="All"/>
 
-            <Button Text="Start Game" AbsoluteLayout.LayoutBounds="0.5,0.2,0,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-            <Button Text="Continue-> ?" AbsoluteLayout.LayoutBounds="0.5,0.35,0,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-            <Button Text="Settings" AbsoluteLayout.LayoutBounds="0.5,0.5,0,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Button Text="Start Game" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.3,.4,.07" Style="{StaticResource buttonstyle}"/>
+            <Button Text="Continue-> ?" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.4,.3,.07" Style="{StaticResource buttonstyle}"/>
+            <Button Text="Settings" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.5,.5,.07" Style="{StaticResource buttonstyle}"/>
             <StackLayout/>
         </AbsoluteLayout>
     </ContentPage.Content>
