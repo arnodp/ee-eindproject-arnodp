@@ -11,9 +11,9 @@
                    AbsoluteLayout.LayoutFlags="All"/>
 
             <Button Text="Start Game" Command="{Binding StartGameCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.3,.5,.07" Style="{StaticResource buttonstyle}"/>
-            <Button Text="Continue-> ?" Command="{Binding ContinueCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.4,.5,.07" Style="{StaticResource buttonstyle}"/>
-            <Button Text="Settings" Command="{Binding SettingsCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.5,.5,.07" Style="{StaticResource buttonstyle}"/>
-            <Button Text="History" Command="{Binding HistoryCommand}" AbsoluteLayout.LayoutBounds="0.5,0.65,0,0" AbsoluteLayout.LayoutFlags="PositionProportional" Style="{StaticResource buttonstyle}"/>
+            <Button Text="Continue" Command="{Binding ContinueCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.4,.5,.07" Style="{StaticResource buttonstyle}"/>
+            <Button Text="Settings" Command="{Binding OpenSettingsCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.5,.5,.07" Style="{StaticResource buttonstyle}"/>
+            <Button Text="History" Command="{Binding OpenHistoryCommand}" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5,0.6,.5,.07" Style="{StaticResource buttonstyle}"/>
             <StackLayout/>
         </AbsoluteLayout>
     </ContentPage.Content>
