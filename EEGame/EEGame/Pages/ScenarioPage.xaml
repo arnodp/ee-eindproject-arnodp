@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EEGame.Pages.ScenarioPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                
+            </StackLayout>
+            
+            <!--<StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+
+            </StackLayout>-->
+            
+            <ScrollView Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="1" HorizontalOptions="CenterAndExpand">
+                
+            </ScrollView>
+
+            <Button Text="Start Game" Command="{Binding StartGameCommand}" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="2" Style="{StaticResource buttonstyle}"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

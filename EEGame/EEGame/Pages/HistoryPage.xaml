@@ -4,9 +4,23 @@
              x:Class="EEGame.Pages.HistoryPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="Medium" Text="This game is based on the Battle of Kursk&#x0a;"/>
+                        <Span>Here is a short history of this battle.</Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <ScrollView>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span>The Battle of Kursk was a Second World War engagement between German and Soviet forces on the Eastern Front near Kursk (450 kilometres or 280 miles south-west of Moscow) in the Soviet Union, during July and August 1943. The battle began with the launch of the German offensive, Operation Citadel, on 5 July, which had the objective of pinching off the Kursk salient with attacks on the base of the salient from north and south simultaneously. After the German offensive stalled on the northern side of the salient, on 12 July the Soviets commenced their Kursk Strategic Offensive Operation with the launch of Operation Kutuzov against the rear of the German forces in the northern side. On the southern side, the Soviets also launched powerful counterattacks the same day, one of which led to a large armoured clash, the Battle of Prokhorovka. On 3 August, the Soviets began the second phase of the Kursk Strategic Offensive Operation with the launch of Operation Polkovodets Rumyantsev against the German forces in the southern side of the Kursk salient.</Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
